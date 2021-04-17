@@ -7,6 +7,7 @@
 :PROPERTIES:
 :date_finished: 
 :author: 
+:tags: 
 :reviewed: 
 :type: books
 :template: Book summary
@@ -51,6 +52,7 @@ Book reviews:
 :producer: 
 :tags: 
 :date: 
+:link: 
 :END:
 ### Basic description:
 ####
@@ -94,6 +96,7 @@ Book reviews:
 ### Basic description:
 ####
 ### Key points:
+####
 ## [[morning pages]]
 :PROPERTIES:
 :template: Morning pages
