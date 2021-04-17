@@ -1,3 +1,7 @@
+---
+title: templates
+---
+
 ## 
 :PROPERTIES:
 :template: tags
