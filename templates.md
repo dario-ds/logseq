@@ -1,8 +1,3 @@
----
-title: templates
-public: true
----
-
 ## 
 :PROPERTIES:
 :template: tags
