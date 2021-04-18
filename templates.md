@@ -9,11 +9,11 @@ title: templates
 :END:
 ## 
 :PROPERTIES:
-:date_finished: 
+:type: books
 :author: 
+:date_finished: 
 :tags: 
 :reviewed: 
-:type: books
 :template: Book summary
 :recommended_by: 
 :rating: 
@@ -36,19 +36,6 @@ Book reviews:
 ### Would I recommend this book wholeheartedly to...
 #### Partner, family, friends, colleagues, manager, direct reports,
 ### Where can I find the blog post equivalent?
-## [[]]
-:PROPERTIES:
-:template: PermanentNote
-:tags: permanent
-:END:
-###
-### Related notes:
-####
-### 
-:PROPERTIES:
-:tags: 
-:END:
-### Reference:
 ## 
 :PROPERTIES:
 :type: videos
@@ -108,3 +95,31 @@ Book reviews:
 ### #Gratitude
 ### [[Thinking about]]
 ### #Dreams
+## [[meeting notes]]
+:PROPERTIES:
+:template: meeting notes
+:END:
+### #topic
+### #participants
+### [[important points]]
+### TODO (personal)
+:PROPERTIES:
+:todo: 1618731771239
+:END:
+### TODO (other)
+:PROPERTIES:
+:todo: 1618731786211
+:END:
+## [[]]
+:PROPERTIES:
+:template: PermanentNote
+:tags: permanent
+:END:
+###
+### Related notes:
+####
+### 
+:PROPERTIES:
+:tags: 
+:END:
+### Reference:
