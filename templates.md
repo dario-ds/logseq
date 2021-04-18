@@ -9,7 +9,7 @@ title: templates
 :END:
 ## 
 :PROPERTIES:
-:type: books
+:type: [[books]]
 :author: 
 :date_finished: 
 :tags: 
@@ -38,7 +38,7 @@ Book reviews:
 ### Where can I find the blog post equivalent?
 ## 
 :PROPERTIES:
-:type: videos
+:type: [[videos]]
 :template: Video notes
 :producer: 
 :tags: 
@@ -64,7 +64,7 @@ Book reviews:
 ####
 ## 
 :PROPERTIES:
-:type: articles
+:type: [[articles]]
 :template: Articles
 :tags: 
 :date: 
@@ -77,7 +77,7 @@ Book reviews:
 ####
 ## 
 :PROPERTIES:
-:type: courses
+:type: [[courses]]
 :template: courses
 :tags: 
 :date: 
