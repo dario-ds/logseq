@@ -54,19 +54,6 @@
 	  todo:: 1618731771239
 	- TODO (other)
 	  todo:: 1618731786211
--
-  template:: Zettel
-  zettel::
-	- **CF:** Continue flow:
-		-
-	- **DD:** Drill down:
-		-
-	- Related notes:
-		-
-	- Literature notes:
-		-
-	- Source:
-		-
 - [[Evening reflections]]
   template:: Evening reflections
 	- [[What happened today?]]
