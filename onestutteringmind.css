@@ -1,0 +1,250 @@
+/*Changing tags to have a blue button appearance and be nice and rounded */
+
+.tag{
+  padding:0 7px;
+  border-radius:7px;
+  margin:2px 0;
+  color:white !important;
+  background-color:#2883df;
+}.content
+
+.tag:hover{
+  background-color:rgba(40, 40, 130, 0.998);
+}.content
+
+/* Changing colours for specific page references and creating button appearance*/
+
+.page-reference[data-ref^="Q:"] { 
+  color: #B19443;
+  padding: 2px 5px 2px 5px;
+  font-size: 0.95rem;
+  line-height: 1em;
+  font-weight: 500;
+  border-radius: 5px 5px 5px 5px;
+  border-style: solid;
+  border-color: #B19443;
+  border-width: thin;
+  position:relative;
+  box-shadow: 1px 1px 3px  #DFDFDF;
+}
+
+.page-reference[data-ref^="Q:"] .bracket {
+  display: none;
+}
+
+.page-reference[data-ref^="E:"] { 
+  color: #c66868;
+  padding: 2px 5px 2px 5px;
+  font-size: 0.95rem;
+  line-height: 1em;
+  font-weight: 500;
+  border-radius: 5px 5px 5px 5px;
+  border-style: solid;
+  border-color: #c66868;
+  border-width: thin;
+  position:relative;
+  box-shadow: 1px 1px 3px  #DFDFDF;
+}
+.page-reference[data-ref^="E:"] .bracket {
+  display: none;
+}
+
+.page-reference[data-ref^="C:"] { 
+  color: #62a36b !important;
+  padding: 2px 5px 2px 5px;
+  font-size: .95rem;
+  line-height: 1em;
+  font-weight: 500;
+  border-radius: 5px 5px 5px 5px;
+  border-style: solid;
+  border-color: #62a36b;
+  border-width: thin;
+  position:relative;
+  box-shadow: 1px 1px 3px  #DFDFDF;
+}
+
+.page-reference[data-ref^="C:"] .bracket {
+  display: none;
+}
+
+/* Making header text in query table pop */
+
+th {
+  font-size: 1.1rem;
+  font-weight: bold;
+  text-transform: capitalize;
+}
+
+/* Wrapping text in query table */
+
+td {
+    white-space: pre-wrap !important;
+}
+ 
+/* Changing colours for specific tags */
+
+a.tag[data-ref="q"]{
+  padding:0 7px;
+  border-radius:7px;
+  margin:2px 0;
+  color:white !important;
+  background-color:#bc2a10;
+}.content
+
+a.tag[data-ref="inbox"]{
+  padding:0 7px;
+  border-radius:7px;
+  margin:2px 0;
+  color:white !important;
+  background-color:#bc2a10;
+}.content
+
+a.tag[data-ref="fleeting"]{
+  padding:0 7px;
+  border-radius:7px;
+  margin:2px 0;
+  color:white !important;
+  background-color:#da9423;
+}.content
+
+a.tag[data-ref^="observation"]{
+  padding:0 7px;
+  border-radius:7px;
+  margin:2px 0;
+  color:white !important;
+  background-color:#da9423;
+}.content
+
+a.tag[data-ref^="reflection"]{
+  padding:0 7px;
+  border-radius:7px;
+  margin:2px 0;
+  color:white !important;
+  background-color:#da9423;
+}.content
+
+/* Creating buttons for tasks for the 10K work framework */
+
+a.tag[data-ref*="$10k"]{
+  margin: 0 1em 0 0;
+  visibility: hidden;  
+}.content
+
+a.tag[data-ref="$10k"]::before {
+  visibility: visible;
+  display: block;
+  position: absolute;
+  width: fit-content;
+  content: "$10k";
+  padding: 0 7px 0 7px;
+  border-radius:7px;
+  margin:0px -7px;
+  color:white !important;
+  background-color:green;
+}  
+
+a.tag[data-ref*="$1k"]{
+  margin: 0 1em 0 0;
+  visibility: hidden;  
+}.content
+
+a.tag[data-ref="$1k"]::before {
+  visibility: visible;
+  display: block;
+  position: absolute;
+  width: fit-content;
+  content: "$1k";
+  padding: 0 7px 0 7px;
+  border-radius:7px;
+  margin:0px -7px;
+  color:white !important;
+  background-color:rgb(56, 163, 56);
+}  
+
+a.tag[data-ref*="$100"]{
+  margin: 0 1em 0 0;
+  visibility: hidden;  
+}.content
+
+a.tag[data-ref="$100"]::before {
+  visibility: visible;
+  display: block;
+  position: absolute;
+  width: fit-content;
+  content: "$100";
+  padding: 0 7px 0 7px;
+  border-radius:7px;
+  margin:0px -7px;
+  color:black !important;
+  background-color:rgb(120, 199, 120);
+}  
+
+a.tag[data-ref*="$10"]{
+  margin: 0 1em 0 0;
+  visibility: hidden;  
+}.content
+
+a.tag[data-ref="$10"]::before {
+  visibility: visible;
+  display: block;
+  position: absolute;
+  width: fit-content;
+  content: "$10";
+  padding: 0 7px 0 7px;
+  border-radius:7px;
+  margin:0px -7px;
+  color:black !important;
+  background-color:rgb(184, 244, 184);
+}  
+
+/* Creating button appearance for my jumping off pages, 'to/' and 'Scratchpad/' */
+
+.page-reference[data-ref^="to/"] { 
+  color: #2883df;;
+  padding: 2px 5px 2px 5px;
+  font-size: 0.95rem;
+  line-height: 1em;
+  font-weight: 500;
+  border-radius: 5px 5px 5px 5px;
+  border-style: solid;
+  border-color: #2883df;
+  border-width: thin;
+  position:relative;
+  box-shadow: 1px 1px 3px  #DFDFDF;
+}
+
+.page-reference[data-ref^="to/"] .bracket {
+  display: none;
+}
+
+.page-reference[data-ref^="Scratchpad/"] { 
+  color: #2883df;;
+  padding: 2px 5px 2px 5px;
+  font-size: 0.95rem;
+  line-height: 1em;
+  font-weight: 500;
+  border-radius: 5px 5px 5px 5px;
+  border-style: solid;
+  border-color: #2883df;
+  border-width: thin;
+  position:relative;
+  box-shadow: 1px 1px 3px  #DFDFDF;
+}
+
+.page-reference[data-ref^="Scratchpad/"] .bracket {
+  display: none;
+}
+
+/* Changing the appearance of markdown quotes (blocks starting with '>' to avoid the need to use admonitions to make quotes pop' */
+
+blockquote {
+  display: block;
+  text-indent: 0;
+  padding: 8px 20px;
+  border-left: 4px solid;
+  border-left-color: var(--ls-page-blockquote-border-color,#d3d3d3);
+  background-color: var(--ls-page-blockquote-bg-color,#f7f7f7);
+  margin: 1rem 0;
+  color: var(--ls-page-blockquote-color,#24292e);
+  font-size: 1rem;
+}
