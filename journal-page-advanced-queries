@@ -1,0 +1,53 @@
+ :default-queries
+ {:journals
+ [{:title [:b " 🕗 OVERDUE (past scheduled or deadline items not done)"]
+		  :query [:find (pull ?b [*])
+		  	:in $ ?start ?end
+		  	:where
+		  (or 
+		  	[?b :block/scheduled ?d] 
+		  	[?b :block/deadline ?d]
+		  )
+		  (not
+		    [?b :block/marker ?marker] 
+		    [(contains? #{"DONE" "CANCELLED"} ?marker)]
+		   )
+		  [(>= ?d ?start)]
+		  [(<= ?d ?end)]
+		  ]
+		  :inputs [:1500d-before :today]
+		  :collapsed? false}
+	  {:title [:b "📅 NEXT (tasks scheduled within next 7 days)"]
+		  :query [:find (pull ?b [*])
+		  	:in $ ?start ?end
+		  	:where
+		  (or 
+		  	[?b :block/scheduled ?d] 
+		  	[?b :block/deadline ?d]
+		  )
+		  (not
+		    [?b :block/marker ?marker] 
+		    [(contains? #{"DONE"} ?marker)]
+		   )
+		  [(>= ?d ?start)]
+		  [(<= ?d ?end)]
+		  ]
+		  :inputs [:today :7d-after]
+		  :collapsed? false}
+	  {:title [:b "🔭 HORIZON (Tasks scheduled for between a week and 3 months)"]
+		  :query [:find (pull ?b [*])
+		  	:in $ ?start ?end
+		  	:where
+		  (or 
+		  	[?b :block/scheduled ?d] 
+		  	[?b :block/deadline ?d]
+		  )
+		  (not
+		    [?b :block/marker ?marker] 
+		    [(contains? #{"DONE"} ?marker)]
+		   )
+		  [(>= ?d ?start)]
+		  [(<= ?d ?end)]
+		  ]
+		  :inputs [:today/+7d  :today/+90d]
+		  :collapsed? false}]}
